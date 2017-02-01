@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9452DACB1E42476B00158C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DACA1E42476B00158C09 /* AppDelegate.swift */; };
+		9452DAD21E42476B00158C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9452DAD11E42476B00158C09 /* Assets.xcassets */; };
+		9452DAD51E42476B00158C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9452DAD31E42476B00158C09 /* LaunchScreen.storyboard */; };
+		9452DAE01E42476E00158C09 /* LaundryHousePartnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DADF1E42476E00158C09 /* LaundryHousePartnerTests.swift */; };
+		9452DAEB1E42476F00158C09 /* LaundryHousePartnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DAEA1E42476F00158C09 /* LaundryHousePartnerUITests.swift */; };
+		9452DAF91E4247E700158C09 /* HexColorCodeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DAF81E4247E700158C09 /* HexColorCodeConverter.swift */; };
+		9452DAFB1E424B7600158C09 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DAFA1E424B7600158C09 /* MainViewController.swift */; };
+		9452DAFD1E42798200158C09 /* addProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DAFC1E42798200158C09 /* addProductViewController.swift */; };
+		9452DB021E427B8700158C09 /* priceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB011E427B8700158C09 /* priceViewController.swift */; };
+		9452DB041E427BAD00158C09 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB031E427BAD00158C09 /* LocationViewController.swift */; };
+		9452DB061E427BC300158C09 /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB051E427BC300158C09 /* StateViewController.swift */; };
+		9452DB081E427BD600158C09 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB071E427BD600158C09 /* CountryViewController.swift */; };
+		9452DB0A1E427BEF00158C09 /* ZipcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB091E427BEF00158C09 /* ZipcodeViewController.swift */; };
+		9452DB111E4283DF00158C09 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9452DB0E1E4283DF00158C09 /* Info.plist */; };
+		9452DB121E4283DF00158C09 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB0F1E4283DF00158C09 /* SCLAlertView.swift */; };
+		9452DB131E4283DF00158C09 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB101E4283DF00158C09 /* SCLExtensions.swift */; };
+		9452DB161E42906800158C09 /* ProductRelatedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB151E42906800158C09 /* ProductRelatedData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9452DADC1E42476E00158C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9452DABF1E42476A00158C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9452DAC61E42476A00158C09;
+			remoteInfo = LaundryHousePartner;
+		};
+		9452DAE71E42476E00158C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9452DABF1E42476A00158C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9452DAC61E42476A00158C09;
+			remoteInfo = LaundryHousePartner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9452DAC71E42476A00158C09 /* LaundryHousePartner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaundryHousePartner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9452DACA1E42476B00158C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9452DAD11E42476B00158C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9452DAD41E42476B00158C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9452DAD61E42476B00158C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9452DADB1E42476E00158C09 /* LaundryHousePartnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaundryHousePartnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9452DADF1E42476E00158C09 /* LaundryHousePartnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryHousePartnerTests.swift; sourceTree = "<group>"; };
+		9452DAE11E42476E00158C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9452DAE61E42476E00158C09 /* LaundryHousePartnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaundryHousePartnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9452DAEA1E42476F00158C09 /* LaundryHousePartnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryHousePartnerUITests.swift; sourceTree = "<group>"; };
+		9452DAEC1E42476F00158C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9452DAF81E4247E700158C09 /* HexColorCodeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorCodeConverter.swift; sourceTree = "<group>"; };
+		9452DAFA1E424B7600158C09 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9452DAFC1E42798200158C09 /* addProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addProductViewController.swift; sourceTree = "<group>"; };
+		9452DB011E427B8700158C09 /* priceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = priceViewController.swift; sourceTree = "<group>"; };
+		9452DB031E427BAD00158C09 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		9452DB051E427BC300158C09 /* StateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
+		9452DB071E427BD600158C09 /* CountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		9452DB091E427BEF00158C09 /* ZipcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipcodeViewController.swift; sourceTree = "<group>"; };
+		9452DB0E1E4283DF00158C09 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9452DB0F1E4283DF00158C09 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		9452DB101E4283DF00158C09 /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
+		9452DB151E42906800158C09 /* ProductRelatedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRelatedData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9452DAC41E42476A00158C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9452DAD81E42476E00158C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9452DAE31E42476E00158C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9452DABE1E42476A00158C09 = {
+			isa = PBXGroup;
+			children = (
+				9452DAC91E42476A00158C09 /* LaundryHousePartner */,
+				9452DADE1E42476E00158C09 /* LaundryHousePartnerTests */,
+				9452DAE91E42476E00158C09 /* LaundryHousePartnerUITests */,
+				9452DAC81E42476A00158C09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9452DAC81E42476A00158C09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9452DAC71E42476A00158C09 /* LaundryHousePartner.app */,
+				9452DADB1E42476E00158C09 /* LaundryHousePartnerTests.xctest */,
+				9452DAE61E42476E00158C09 /* LaundryHousePartnerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9452DAC91E42476A00158C09 /* LaundryHousePartner */ = {
+			isa = PBXGroup;
+			children = (
+				9452DB0D1E4283DF00158C09 /* SCLAlertView */,
+				9452DACA1E42476B00158C09 /* AppDelegate.swift */,
+				9452DAFA1E424B7600158C09 /* MainViewController.swift */,
+				9452DAFC1E42798200158C09 /* addProductViewController.swift */,
+				9452DB011E427B8700158C09 /* priceViewController.swift */,
+				9452DB031E427BAD00158C09 /* LocationViewController.swift */,
+				9452DB051E427BC300158C09 /* StateViewController.swift */,
+				9452DB071E427BD600158C09 /* CountryViewController.swift */,
+				9452DB091E427BEF00158C09 /* ZipcodeViewController.swift */,
+				9452DAF81E4247E700158C09 /* HexColorCodeConverter.swift */,
+				9452DAD11E42476B00158C09 /* Assets.xcassets */,
+				9452DAD31E42476B00158C09 /* LaunchScreen.storyboard */,
+				9452DAD61E42476B00158C09 /* Info.plist */,
+			);
+			path = LaundryHousePartner;
+			sourceTree = "<group>";
+		};
+		9452DADE1E42476E00158C09 /* LaundryHousePartnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9452DADF1E42476E00158C09 /* LaundryHousePartnerTests.swift */,
+				9452DAE11E42476E00158C09 /* Info.plist */,
+			);
+			path = LaundryHousePartnerTests;
+			sourceTree = "<group>";
+		};
+		9452DAE91E42476E00158C09 /* LaundryHousePartnerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9452DAEA1E42476F00158C09 /* LaundryHousePartnerUITests.swift */,
+				9452DAEC1E42476F00158C09 /* Info.plist */,
+			);
+			path = LaundryHousePartnerUITests;
+			sourceTree = "<group>";
+		};
+		9452DB0D1E4283DF00158C09 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				9452DB141E42904300158C09 /* Model */,
+				9452DB0E1E4283DF00158C09 /* Info.plist */,
+				9452DB0F1E4283DF00158C09 /* SCLAlertView.swift */,
+				9452DB101E4283DF00158C09 /* SCLExtensions.swift */,
+			);
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
+		9452DB141E42904300158C09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9452DB151E42906800158C09 /* ProductRelatedData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9452DAC61E42476A00158C09 /* LaundryHousePartner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9452DAEF1E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartner" */;
+			buildPhases = (
+				9452DAC31E42476A00158C09 /* Sources */,
+				9452DAC41E42476A00158C09 /* Frameworks */,
+				9452DAC51E42476A00158C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaundryHousePartner;
+			productName = LaundryHousePartner;
+			productReference = 9452DAC71E42476A00158C09 /* LaundryHousePartner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9452DADA1E42476E00158C09 /* LaundryHousePartnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9452DAF21E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartnerTests" */;
+			buildPhases = (
+				9452DAD71E42476E00158C09 /* Sources */,
+				9452DAD81E42476E00158C09 /* Frameworks */,
+				9452DAD91E42476E00158C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9452DADD1E42476E00158C09 /* PBXTargetDependency */,
+			);
+			name = LaundryHousePartnerTests;
+			productName = LaundryHousePartnerTests;
+			productReference = 9452DADB1E42476E00158C09 /* LaundryHousePartnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9452DAE51E42476E00158C09 /* LaundryHousePartnerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9452DAF51E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartnerUITests" */;
+			buildPhases = (
+				9452DAE21E42476E00158C09 /* Sources */,
+				9452DAE31E42476E00158C09 /* Frameworks */,
+				9452DAE41E42476E00158C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9452DAE81E42476E00158C09 /* PBXTargetDependency */,
+			);
+			name = LaundryHousePartnerUITests;
+			productName = LaundryHousePartnerUITests;
+			productReference = 9452DAE61E42476E00158C09 /* LaundryHousePartnerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9452DABF1E42476A00158C09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "BBB Technology";
+				TargetAttributes = {
+					9452DAC61E42476A00158C09 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9QYE6NRHXE;
+						ProvisioningStyle = Automatic;
+					};
+					9452DADA1E42476E00158C09 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9QYE6NRHXE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9452DAC61E42476A00158C09;
+					};
+					9452DAE51E42476E00158C09 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9QYE6NRHXE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9452DAC61E42476A00158C09;
+					};
+				};
+			};
+			buildConfigurationList = 9452DAC21E42476A00158C09 /* Build configuration list for PBXProject "LaundryHousePartner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9452DABE1E42476A00158C09;
+			productRefGroup = 9452DAC81E42476A00158C09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9452DAC61E42476A00158C09 /* LaundryHousePartner */,
+				9452DADA1E42476E00158C09 /* LaundryHousePartnerTests */,
+				9452DAE51E42476E00158C09 /* LaundryHousePartnerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9452DAC51E42476A00158C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9452DAD51E42476B00158C09 /* LaunchScreen.storyboard in Resources */,
+				9452DAD21E42476B00158C09 /* Assets.xcassets in Resources */,
+				9452DB111E4283DF00158C09 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9452DAD91E42476E00158C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9452DAE41E42476E00158C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9452DAC31E42476A00158C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9452DB131E4283DF00158C09 /* SCLExtensions.swift in Sources */,
+				9452DB081E427BD600158C09 /* CountryViewController.swift in Sources */,
+				9452DB041E427BAD00158C09 /* LocationViewController.swift in Sources */,
+				9452DB121E4283DF00158C09 /* SCLAlertView.swift in Sources */,
+				9452DAF91E4247E700158C09 /* HexColorCodeConverter.swift in Sources */,
+				9452DB0A1E427BEF00158C09 /* ZipcodeViewController.swift in Sources */,
+				9452DACB1E42476B00158C09 /* AppDelegate.swift in Sources */,
+				9452DB161E42906800158C09 /* ProductRelatedData.swift in Sources */,
+				9452DAFD1E42798200158C09 /* addProductViewController.swift in Sources */,
+				9452DB061E427BC300158C09 /* StateViewController.swift in Sources */,
+				9452DB021E427B8700158C09 /* priceViewController.swift in Sources */,
+				9452DAFB1E424B7600158C09 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9452DAD71E42476E00158C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9452DAE01E42476E00158C09 /* LaundryHousePartnerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9452DAE21E42476E00158C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9452DAEB1E42476F00158C09 /* LaundryHousePartnerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9452DADD1E42476E00158C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9452DAC61E42476A00158C09 /* LaundryHousePartner */;
+			targetProxy = 9452DADC1E42476E00158C09 /* PBXContainerItemProxy */;
+		};
+		9452DAE81E42476E00158C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9452DAC61E42476A00158C09 /* LaundryHousePartner */;
+			targetProxy = 9452DAE71E42476E00158C09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9452DAD31E42476B00158C09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9452DAD41E42476B00158C09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9452DAED1E42476F00158C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9452DAEE1E42476F00158C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9452DAF01E42476F00158C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9QYE6NRHXE;
+				INFOPLIST_FILE = LaundryHousePartner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBBtechnology.LaundryHousePartner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9452DAF11E42476F00158C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9QYE6NRHXE;
+				INFOPLIST_FILE = LaundryHousePartner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBBtechnology.LaundryHousePartner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9452DAF31E42476F00158C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9QYE6NRHXE;
+				INFOPLIST_FILE = LaundryHousePartnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBBtechnology.LaundryHousePartnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaundryHousePartner.app/LaundryHousePartner";
+			};
+			name = Debug;
+		};
+		9452DAF41E42476F00158C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9QYE6NRHXE;
+				INFOPLIST_FILE = LaundryHousePartnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBBtechnology.LaundryHousePartnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaundryHousePartner.app/LaundryHousePartner";
+			};
+			name = Release;
+		};
+		9452DAF61E42476F00158C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9QYE6NRHXE;
+				INFOPLIST_FILE = LaundryHousePartnerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBBtechnology.LaundryHousePartnerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LaundryHousePartner;
+			};
+			name = Debug;
+		};
+		9452DAF71E42476F00158C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9QYE6NRHXE;
+				INFOPLIST_FILE = LaundryHousePartnerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBBtechnology.LaundryHousePartnerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LaundryHousePartner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9452DAC21E42476A00158C09 /* Build configuration list for PBXProject "LaundryHousePartner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9452DAED1E42476F00158C09 /* Debug */,
+				9452DAEE1E42476F00158C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9452DAEF1E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9452DAF01E42476F00158C09 /* Debug */,
+				9452DAF11E42476F00158C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9452DAF21E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9452DAF31E42476F00158C09 /* Debug */,
+				9452DAF41E42476F00158C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9452DAF51E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartnerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9452DAF61E42476F00158C09 /* Debug */,
+				9452DAF71E42476F00158C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9452DABF1E42476A00158C09 /* Project object */;
+}
