@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6772BE32C3557B925284F58C /* Pods_LaundryHousePartnerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE900E5AA94D53FCB36A09A9 /* Pods_LaundryHousePartnerUITests.framework */; };
+		943E7C1C1E4CB33C000AB8B2 /* ProductPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943E7C1B1E4CB33C000AB8B2 /* ProductPriceCell.swift */; };
+		943FA3681E48CEA0002AF125 /* VendorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943FA3671E48CEA0002AF125 /* VendorListViewController.swift */; };
+		943FA36A1E48D432002AF125 /* vendorListCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943FA3691E48D432002AF125 /* vendorListCustomCell.swift */; };
 		9452DACB1E42476B00158C09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DACA1E42476B00158C09 /* AppDelegate.swift */; };
 		9452DAD21E42476B00158C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9452DAD11E42476B00158C09 /* Assets.xcassets */; };
 		9452DAD51E42476B00158C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9452DAD31E42476B00158C09 /* LaunchScreen.storyboard */; };
@@ -15,7 +19,7 @@
 		9452DAF91E4247E700158C09 /* HexColorCodeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DAF81E4247E700158C09 /* HexColorCodeConverter.swift */; };
 		9452DAFB1E424B7600158C09 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DAFA1E424B7600158C09 /* MainViewController.swift */; };
 		9452DAFD1E42798200158C09 /* addProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DAFC1E42798200158C09 /* addProductViewController.swift */; };
-		9452DB021E427B8700158C09 /* priceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB011E427B8700158C09 /* priceViewController.swift */; };
+		9452DB021E427B8700158C09 /* orderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB011E427B8700158C09 /* orderHistoryViewController.swift */; };
 		9452DB041E427BAD00158C09 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB031E427BAD00158C09 /* LocationViewController.swift */; };
 		9452DB061E427BC300158C09 /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB051E427BC300158C09 /* StateViewController.swift */; };
 		9452DB081E427BD600158C09 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB071E427BD600158C09 /* CountryViewController.swift */; };
@@ -24,6 +28,35 @@
 		9452DB121E4283DF00158C09 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB0F1E4283DF00158C09 /* SCLAlertView.swift */; };
 		9452DB131E4283DF00158C09 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB101E4283DF00158C09 /* SCLExtensions.swift */; };
 		9452DB161E42906800158C09 /* ProductRelatedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452DB151E42906800158C09 /* ProductRelatedData.swift */; };
+		9457AFCB1E44FC0F00F52FC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9457AFCA1E44FC0F00F52FC9 /* GoogleService-Info.plist */; };
+		9457AFCD1E44FF2800F52FC9 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFCC1E44FF2800F52FC9 /* Toast.swift */; };
+		9457AFCF1E45072700F52FC9 /* VendorMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFCE1E45072700F52FC9 /* VendorMainViewController.swift */; };
+		9457AFE81E450FCB00F52FC9 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFD21E450FCB00F52FC9 /* IQNSArray+Sort.swift */; };
+		9457AFE91E450FCB00F52FC9 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFD31E450FCB00F52FC9 /* IQUIScrollView+Additions.swift */; };
+		9457AFEA1E450FCB00F52FC9 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFD41E450FCB00F52FC9 /* IQUITextFieldView+Additions.swift */; };
+		9457AFEB1E450FCB00F52FC9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFD51E450FCB00F52FC9 /* IQUIView+Hierarchy.swift */; };
+		9457AFEC1E450FCB00F52FC9 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFD61E450FCB00F52FC9 /* IQUIViewController+Additions.swift */; };
+		9457AFED1E450FCB00F52FC9 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFD71E450FCB00F52FC9 /* IQUIWindow+Hierarchy.swift */; };
+		9457AFEE1E450FCB00F52FC9 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFD91E450FCB00F52FC9 /* IQKeyboardManagerConstants.swift */; };
+		9457AFEF1E450FCB00F52FC9 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFDA1E450FCB00F52FC9 /* IQKeyboardManagerConstantsInternal.swift */; };
+		9457AFF01E450FCB00F52FC9 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFDB1E450FCB00F52FC9 /* IQKeyboardManager.swift */; };
+		9457AFF11E450FCB00F52FC9 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFDD1E450FCB00F52FC9 /* IQKeyboardReturnKeyHandler.swift */; };
+		9457AFF21E450FCB00F52FC9 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFDF1E450FCB00F52FC9 /* IQTextView.swift */; };
+		9457AFF31E450FCB00F52FC9 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFE11E450FCB00F52FC9 /* IQBarButtonItem.swift */; };
+		9457AFF41E450FCB00F52FC9 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFE21E450FCB00F52FC9 /* IQPreviousNextView.swift */; };
+		9457AFF51E450FCB00F52FC9 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFE31E450FCB00F52FC9 /* IQTitleBarButtonItem.swift */; };
+		9457AFF61E450FCB00F52FC9 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFE41E450FCB00F52FC9 /* IQToolbar.swift */; };
+		9457AFF71E450FCB00F52FC9 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFE51E450FCB00F52FC9 /* IQUIView+IQKeyboardToolbar.swift */; };
+		9457AFF81E450FCB00F52FC9 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9457AFE71E450FCB00F52FC9 /* IQKeyboardManager.bundle */; };
+		9457AFFA1E451A0F00F52FC9 /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457AFF91E451A0F00F52FC9 /* customCell.swift */; };
+		946284CE1E4379B0009CFE85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946284CD1E4379B0009CFE85 /* LoginViewController.swift */; };
+		94A555771E4CC54B00E032F0 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A555761E4CC54B00E032F0 /* OrderCell.swift */; };
+		94A555791E4CC82F00E032F0 /* DetailOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A555781E4CC82F00E032F0 /* DetailOrderCell.swift */; };
+		94A5557B1E4CCE4600E032F0 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5557A1E4CCE4600E032F0 /* OrderDetailViewController.swift */; };
+		94A555821E4D08A800E032F0 /* VendorRecentOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A555811E4D08A800E032F0 /* VendorRecentOrderViewController.swift */; };
+		94A555841E4D08D200E032F0 /* vendorOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A555831E4D08D200E032F0 /* vendorOrderDetailViewController.swift */; };
+		C2F6163283534A1402CE5898 /* Pods_LaundryHousePartnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD5CB128C387066F5F3EE46 /* Pods_LaundryHousePartnerTests.framework */; };
+		CBF616CB1FAF7DC5E6FF81F1 /* Pods_LaundryHousePartner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68151B895C832436241F092C /* Pods_LaundryHousePartner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +77,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BFA30477808CC3FFCB3828C /* Pods-LaundryHousePartnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryHousePartnerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryHousePartnerTests/Pods-LaundryHousePartnerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E878FCCF987CF8E3333CE80 /* Pods-LaundryHousePartnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryHousePartnerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryHousePartnerTests/Pods-LaundryHousePartnerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5531DAA0DBC70D509A64A868 /* Pods-LaundryHousePartnerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryHousePartnerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryHousePartnerUITests/Pods-LaundryHousePartnerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		68151B895C832436241F092C /* Pods_LaundryHousePartner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaundryHousePartner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD5CB128C387066F5F3EE46 /* Pods_LaundryHousePartnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaundryHousePartnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		943E7C1B1E4CB33C000AB8B2 /* ProductPriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPriceCell.swift; sourceTree = "<group>"; };
+		943FA3671E48CEA0002AF125 /* VendorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorListViewController.swift; sourceTree = "<group>"; };
+		943FA3691E48D432002AF125 /* vendorListCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vendorListCustomCell.swift; sourceTree = "<group>"; };
 		9452DAC71E42476A00158C09 /* LaundryHousePartner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaundryHousePartner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9452DACA1E42476B00158C09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9452DAD11E42476B00158C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +99,7 @@
 		9452DAF81E4247E700158C09 /* HexColorCodeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorCodeConverter.swift; sourceTree = "<group>"; };
 		9452DAFA1E424B7600158C09 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9452DAFC1E42798200158C09 /* addProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addProductViewController.swift; sourceTree = "<group>"; };
-		9452DB011E427B8700158C09 /* priceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = priceViewController.swift; sourceTree = "<group>"; };
+		9452DB011E427B8700158C09 /* orderHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orderHistoryViewController.swift; sourceTree = "<group>"; };
 		9452DB031E427BAD00158C09 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		9452DB051E427BC300158C09 /* StateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
 		9452DB071E427BD600158C09 /* CountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +108,38 @@
 		9452DB0F1E4283DF00158C09 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		9452DB101E4283DF00158C09 /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
 		9452DB151E42906800158C09 /* ProductRelatedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRelatedData.swift; sourceTree = "<group>"; };
+		9457AFCA1E44FC0F00F52FC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9457AFCC1E44FF2800F52FC9 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		9457AFCE1E45072700F52FC9 /* VendorMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorMainViewController.swift; sourceTree = "<group>"; };
+		9457AFD21E450FCB00F52FC9 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		9457AFD31E450FCB00F52FC9 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		9457AFD41E450FCB00F52FC9 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		9457AFD51E450FCB00F52FC9 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		9457AFD61E450FCB00F52FC9 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		9457AFD71E450FCB00F52FC9 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		9457AFD91E450FCB00F52FC9 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		9457AFDA1E450FCB00F52FC9 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		9457AFDB1E450FCB00F52FC9 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		9457AFDC1E450FCB00F52FC9 /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		9457AFDD1E450FCB00F52FC9 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		9457AFDF1E450FCB00F52FC9 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		9457AFE11E450FCB00F52FC9 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		9457AFE21E450FCB00F52FC9 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		9457AFE31E450FCB00F52FC9 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		9457AFE41E450FCB00F52FC9 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		9457AFE51E450FCB00F52FC9 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		9457AFE71E450FCB00F52FC9 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		9457AFF91E451A0F00F52FC9 /* customCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
+		946284CD1E4379B0009CFE85 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		94A555761E4CC54B00E032F0 /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		94A555781E4CC82F00E032F0 /* DetailOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailOrderCell.swift; sourceTree = "<group>"; };
+		94A5557A1E4CCE4600E032F0 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		94A555811E4D08A800E032F0 /* VendorRecentOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorRecentOrderViewController.swift; sourceTree = "<group>"; };
+		94A555831E4D08D200E032F0 /* vendorOrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vendorOrderDetailViewController.swift; sourceTree = "<group>"; };
+		BD5844D3ECE495A00DF8E374 /* Pods-LaundryHousePartner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryHousePartner.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryHousePartner/Pods-LaundryHousePartner.release.xcconfig"; sourceTree = "<group>"; };
+		D66A588BB6932C5477B3271E /* Pods-LaundryHousePartner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryHousePartner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryHousePartner/Pods-LaundryHousePartner.debug.xcconfig"; sourceTree = "<group>"; };
+		F8EE36C7F8C6AF0E0D66F03C /* Pods-LaundryHousePartnerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryHousePartnerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryHousePartnerUITests/Pods-LaundryHousePartnerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE900E5AA94D53FCB36A09A9 /* Pods_LaundryHousePartnerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaundryHousePartnerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF616CB1FAF7DC5E6FF81F1 /* Pods_LaundryHousePartner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F6163283534A1402CE5898 /* Pods_LaundryHousePartnerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +163,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6772BE32C3557B925284F58C /* Pods_LaundryHousePartnerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01534EA991948C62C6B218FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68151B895C832436241F092C /* Pods_LaundryHousePartner.framework */,
+				7BD5CB128C387066F5F3EE46 /* Pods_LaundryHousePartnerTests.framework */,
+				FE900E5AA94D53FCB36A09A9 /* Pods_LaundryHousePartnerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9452DABE1E42476A00158C09 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +187,8 @@
 				9452DADE1E42476E00158C09 /* LaundryHousePartnerTests */,
 				9452DAE91E42476E00158C09 /* LaundryHousePartnerUITests */,
 				9452DAC81E42476A00158C09 /* Products */,
+				BA09425A4BE94DB52DA6F60E /* Pods */,
+				01534EA991948C62C6B218FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,19 +205,13 @@
 		9452DAC91E42476A00158C09 /* LaundryHousePartner */ = {
 			isa = PBXGroup;
 			children = (
+				9452DB141E42904300158C09 /* Model */,
 				9452DB0D1E4283DF00158C09 /* SCLAlertView */,
-				9452DACA1E42476B00158C09 /* AppDelegate.swift */,
-				9452DAFA1E424B7600158C09 /* MainViewController.swift */,
-				9452DAFC1E42798200158C09 /* addProductViewController.swift */,
-				9452DB011E427B8700158C09 /* priceViewController.swift */,
-				9452DB031E427BAD00158C09 /* LocationViewController.swift */,
-				9452DB051E427BC300158C09 /* StateViewController.swift */,
-				9452DB071E427BD600158C09 /* CountryViewController.swift */,
-				9452DB091E427BEF00158C09 /* ZipcodeViewController.swift */,
-				9452DAF81E4247E700158C09 /* HexColorCodeConverter.swift */,
-				9452DAD11E42476B00158C09 /* Assets.xcassets */,
-				9452DAD31E42476B00158C09 /* LaunchScreen.storyboard */,
-				9452DAD61E42476B00158C09 /* Info.plist */,
+				946284CC1E437966009CFE85 /* Resources */,
+				94A5557C1E4CDA2800E032F0 /* Authentication */,
+				94A5557F1E4CDA7A00E032F0 /* AdminController */,
+				94A555801E4CDA8500E032F0 /* VendorController */,
+				94A5557D1E4CDA3D00E032F0 /* ComponentController */,
 			);
 			path = LaundryHousePartner;
 			sourceTree = "<group>";
@@ -155,7 +237,6 @@
 		9452DB0D1E4283DF00158C09 /* SCLAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				9452DB141E42904300158C09 /* Model */,
 				9452DB0E1E4283DF00158C09 /* Info.plist */,
 				9452DB0F1E4283DF00158C09 /* SCLAlertView.swift */,
 				9452DB101E4283DF00158C09 /* SCLExtensions.swift */,
@@ -169,6 +250,154 @@
 				9452DB151E42906800158C09 /* ProductRelatedData.swift */,
 			);
 			name = Model;
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
+		9457AFD01E450FCB00F52FC9 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				9457AFD11E450FCB00F52FC9 /* Categories */,
+				9457AFD81E450FCB00F52FC9 /* Constants */,
+				9457AFDB1E450FCB00F52FC9 /* IQKeyboardManager.swift */,
+				9457AFDC1E450FCB00F52FC9 /* IQKeyboardManagerSwift.h */,
+				9457AFDD1E450FCB00F52FC9 /* IQKeyboardReturnKeyHandler.swift */,
+				9457AFDE1E450FCB00F52FC9 /* IQTextView */,
+				9457AFE01E450FCB00F52FC9 /* IQToolbar */,
+				9457AFE61E450FCB00F52FC9 /* Resources */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		9457AFD11E450FCB00F52FC9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9457AFD21E450FCB00F52FC9 /* IQNSArray+Sort.swift */,
+				9457AFD31E450FCB00F52FC9 /* IQUIScrollView+Additions.swift */,
+				9457AFD41E450FCB00F52FC9 /* IQUITextFieldView+Additions.swift */,
+				9457AFD51E450FCB00F52FC9 /* IQUIView+Hierarchy.swift */,
+				9457AFD61E450FCB00F52FC9 /* IQUIViewController+Additions.swift */,
+				9457AFD71E450FCB00F52FC9 /* IQUIWindow+Hierarchy.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9457AFD81E450FCB00F52FC9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9457AFD91E450FCB00F52FC9 /* IQKeyboardManagerConstants.swift */,
+				9457AFDA1E450FCB00F52FC9 /* IQKeyboardManagerConstantsInternal.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9457AFDE1E450FCB00F52FC9 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				9457AFDF1E450FCB00F52FC9 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		9457AFE01E450FCB00F52FC9 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				9457AFE11E450FCB00F52FC9 /* IQBarButtonItem.swift */,
+				9457AFE21E450FCB00F52FC9 /* IQPreviousNextView.swift */,
+				9457AFE31E450FCB00F52FC9 /* IQTitleBarButtonItem.swift */,
+				9457AFE41E450FCB00F52FC9 /* IQToolbar.swift */,
+				9457AFE51E450FCB00F52FC9 /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		9457AFE61E450FCB00F52FC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9457AFE71E450FCB00F52FC9 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		946284CC1E437966009CFE85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9457AFF91E451A0F00F52FC9 /* customCell.swift */,
+				943E7C1B1E4CB33C000AB8B2 /* ProductPriceCell.swift */,
+				94A555761E4CC54B00E032F0 /* OrderCell.swift */,
+				94A555781E4CC82F00E032F0 /* DetailOrderCell.swift */,
+				943FA3691E48D432002AF125 /* vendorListCustomCell.swift */,
+				9457AFD01E450FCB00F52FC9 /* IQKeyboardManagerSwift */,
+				9457AFCA1E44FC0F00F52FC9 /* GoogleService-Info.plist */,
+				9452DAF81E4247E700158C09 /* HexColorCodeConverter.swift */,
+				9457AFCC1E44FF2800F52FC9 /* Toast.swift */,
+				9452DACA1E42476B00158C09 /* AppDelegate.swift */,
+				9452DAD11E42476B00158C09 /* Assets.xcassets */,
+				9452DAD31E42476B00158C09 /* LaunchScreen.storyboard */,
+				9452DAD61E42476B00158C09 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		94A5557C1E4CDA2800E032F0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				946284CD1E4379B0009CFE85 /* LoginViewController.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		94A5557D1E4CDA3D00E032F0 /* ComponentController */ = {
+			isa = PBXGroup;
+			children = (
+				94A5557E1E4CDA5D00E032F0 /* Orders */,
+				9452DAFC1E42798200158C09 /* addProductViewController.swift */,
+				9452DB031E427BAD00158C09 /* LocationViewController.swift */,
+				9452DB051E427BC300158C09 /* StateViewController.swift */,
+				9452DB071E427BD600158C09 /* CountryViewController.swift */,
+				9452DB091E427BEF00158C09 /* ZipcodeViewController.swift */,
+				943FA3671E48CEA0002AF125 /* VendorListViewController.swift */,
+			);
+			name = ComponentController;
+			sourceTree = "<group>";
+		};
+		94A5557E1E4CDA5D00E032F0 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				9452DB011E427B8700158C09 /* orderHistoryViewController.swift */,
+				94A5557A1E4CCE4600E032F0 /* OrderDetailViewController.swift */,
+			);
+			name = Orders;
+			sourceTree = "<group>";
+		};
+		94A5557F1E4CDA7A00E032F0 /* AdminController */ = {
+			isa = PBXGroup;
+			children = (
+				9452DAFA1E424B7600158C09 /* MainViewController.swift */,
+			);
+			name = AdminController;
+			sourceTree = "<group>";
+		};
+		94A555801E4CDA8500E032F0 /* VendorController */ = {
+			isa = PBXGroup;
+			children = (
+				9457AFCE1E45072700F52FC9 /* VendorMainViewController.swift */,
+				94A555811E4D08A800E032F0 /* VendorRecentOrderViewController.swift */,
+				94A555831E4D08D200E032F0 /* vendorOrderDetailViewController.swift */,
+			);
+			name = VendorController;
+			sourceTree = "<group>";
+		};
+		BA09425A4BE94DB52DA6F60E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D66A588BB6932C5477B3271E /* Pods-LaundryHousePartner.debug.xcconfig */,
+				BD5844D3ECE495A00DF8E374 /* Pods-LaundryHousePartner.release.xcconfig */,
+				3E878FCCF987CF8E3333CE80 /* Pods-LaundryHousePartnerTests.debug.xcconfig */,
+				1BFA30477808CC3FFCB3828C /* Pods-LaundryHousePartnerTests.release.xcconfig */,
+				5531DAA0DBC70D509A64A868 /* Pods-LaundryHousePartnerUITests.debug.xcconfig */,
+				F8EE36C7F8C6AF0E0D66F03C /* Pods-LaundryHousePartnerUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +407,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9452DAEF1E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartner" */;
 			buildPhases = (
+				37676CB8F779604E554427F1 /* [CP] Check Pods Manifest.lock */,
 				9452DAC31E42476A00158C09 /* Sources */,
 				9452DAC41E42476A00158C09 /* Frameworks */,
 				9452DAC51E42476A00158C09 /* Resources */,
+				F82DCDB1D79C392553AE79FE /* [CP] Embed Pods Frameworks */,
+				4BC86F2CF39A80F317597F98 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,9 +427,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9452DAF21E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartnerTests" */;
 			buildPhases = (
+				9B56A020BD4975EB62F8DAC5 /* [CP] Check Pods Manifest.lock */,
 				9452DAD71E42476E00158C09 /* Sources */,
 				9452DAD81E42476E00158C09 /* Frameworks */,
 				9452DAD91E42476E00158C09 /* Resources */,
+				C16D91B4682EEBBD000D071B /* [CP] Embed Pods Frameworks */,
+				F94553954AACB5950D23DAB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,9 +448,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9452DAF51E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartnerUITests" */;
 			buildPhases = (
+				61634542D44BF6791BAA259B /* [CP] Check Pods Manifest.lock */,
 				9452DAE21E42476E00158C09 /* Sources */,
 				9452DAE31E42476E00158C09 /* Frameworks */,
 				9452DAE41E42476E00158C09 /* Resources */,
+				3E705572350E2F36E724335C /* [CP] Embed Pods Frameworks */,
+				8C499D80E7D1A1BD1A776257 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,7 +477,7 @@
 				TargetAttributes = {
 					9452DAC61E42476A00158C09 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9QYE6NRHXE;
+						DevelopmentTeam = V77QHBGR7U;
 						ProvisioningStyle = Automatic;
 					};
 					9452DADA1E42476E00158C09 = {
@@ -281,7 +519,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9457AFF81E450FCB00F52FC9 /* IQKeyboardManager.bundle in Resources */,
 				9452DAD51E42476B00158C09 /* LaunchScreen.storyboard in Resources */,
+				9457AFCB1E44FC0F00F52FC9 /* GoogleService-Info.plist in Resources */,
 				9452DAD21E42476B00158C09 /* Assets.xcassets in Resources */,
 				9452DB111E4283DF00158C09 /* Info.plist in Resources */,
 			);
@@ -303,23 +543,189 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37676CB8F779604E554427F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E705572350E2F36E724335C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaundryHousePartnerUITests/Pods-LaundryHousePartnerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BC86F2CF39A80F317597F98 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaundryHousePartner/Pods-LaundryHousePartner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61634542D44BF6791BAA259B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C499D80E7D1A1BD1A776257 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaundryHousePartnerUITests/Pods-LaundryHousePartnerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B56A020BD4975EB62F8DAC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C16D91B4682EEBBD000D071B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaundryHousePartnerTests/Pods-LaundryHousePartnerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F82DCDB1D79C392553AE79FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaundryHousePartner/Pods-LaundryHousePartner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F94553954AACB5950D23DAB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaundryHousePartnerTests/Pods-LaundryHousePartnerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9452DAC31E42476A00158C09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9457AFF11E450FCB00F52FC9 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				9457AFEE1E450FCB00F52FC9 /* IQKeyboardManagerConstants.swift in Sources */,
+				9457AFF31E450FCB00F52FC9 /* IQBarButtonItem.swift in Sources */,
 				9452DB131E4283DF00158C09 /* SCLExtensions.swift in Sources */,
 				9452DB081E427BD600158C09 /* CountryViewController.swift in Sources */,
 				9452DB041E427BAD00158C09 /* LocationViewController.swift in Sources */,
+				9457AFEC1E450FCB00F52FC9 /* IQUIViewController+Additions.swift in Sources */,
 				9452DB121E4283DF00158C09 /* SCLAlertView.swift in Sources */,
+				9457AFED1E450FCB00F52FC9 /* IQUIWindow+Hierarchy.swift in Sources */,
+				94A555821E4D08A800E032F0 /* VendorRecentOrderViewController.swift in Sources */,
+				9457AFF51E450FCB00F52FC9 /* IQTitleBarButtonItem.swift in Sources */,
+				943FA3681E48CEA0002AF125 /* VendorListViewController.swift in Sources */,
+				9457AFF61E450FCB00F52FC9 /* IQToolbar.swift in Sources */,
+				94A5557B1E4CCE4600E032F0 /* OrderDetailViewController.swift in Sources */,
+				9457AFE81E450FCB00F52FC9 /* IQNSArray+Sort.swift in Sources */,
+				943E7C1C1E4CB33C000AB8B2 /* ProductPriceCell.swift in Sources */,
 				9452DAF91E4247E700158C09 /* HexColorCodeConverter.swift in Sources */,
+				9457AFF71E450FCB00F52FC9 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				9457AFF21E450FCB00F52FC9 /* IQTextView.swift in Sources */,
 				9452DB0A1E427BEF00158C09 /* ZipcodeViewController.swift in Sources */,
+				94A555841E4D08D200E032F0 /* vendorOrderDetailViewController.swift in Sources */,
+				9457AFEF1E450FCB00F52FC9 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				9457AFEB1E450FCB00F52FC9 /* IQUIView+Hierarchy.swift in Sources */,
+				9457AFEA1E450FCB00F52FC9 /* IQUITextFieldView+Additions.swift in Sources */,
+				9457AFCD1E44FF2800F52FC9 /* Toast.swift in Sources */,
+				94A555771E4CC54B00E032F0 /* OrderCell.swift in Sources */,
 				9452DACB1E42476B00158C09 /* AppDelegate.swift in Sources */,
+				9457AFF01E450FCB00F52FC9 /* IQKeyboardManager.swift in Sources */,
 				9452DB161E42906800158C09 /* ProductRelatedData.swift in Sources */,
 				9452DAFD1E42798200158C09 /* addProductViewController.swift in Sources */,
+				943FA36A1E48D432002AF125 /* vendorListCustomCell.swift in Sources */,
+				9457AFCF1E45072700F52FC9 /* VendorMainViewController.swift in Sources */,
+				9457AFF41E450FCB00F52FC9 /* IQPreviousNextView.swift in Sources */,
+				94A555791E4CC82F00E032F0 /* DetailOrderCell.swift in Sources */,
 				9452DB061E427BC300158C09 /* StateViewController.swift in Sources */,
-				9452DB021E427B8700158C09 /* priceViewController.swift in Sources */,
+				9452DB021E427B8700158C09 /* orderHistoryViewController.swift in Sources */,
+				9457AFFA1E451A0F00F52FC9 /* customCell.swift in Sources */,
+				946284CE1E4379B0009CFE85 /* LoginViewController.swift in Sources */,
 				9452DAFB1E424B7600158C09 /* MainViewController.swift in Sources */,
+				9457AFE91E450FCB00F52FC9 /* IQUIScrollView+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,12 +865,13 @@
 		};
 		9452DAF01E42476F00158C09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D66A588BB6932C5477B3271E /* Pods-LaundryHousePartner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9QYE6NRHXE;
+				DEVELOPMENT_TEAM = V77QHBGR7U;
 				INFOPLIST_FILE = LaundryHousePartner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BBBtechnology.LaundryHousePartner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sawan.LaundryHousePartner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -472,12 +879,13 @@
 		};
 		9452DAF11E42476F00158C09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD5844D3ECE495A00DF8E374 /* Pods-LaundryHousePartner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9QYE6NRHXE;
+				DEVELOPMENT_TEAM = V77QHBGR7U;
 				INFOPLIST_FILE = LaundryHousePartner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BBBtechnology.LaundryHousePartner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sawan.LaundryHousePartner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -485,6 +893,7 @@
 		};
 		9452DAF31E42476F00158C09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E878FCCF987CF8E3333CE80 /* Pods-LaundryHousePartnerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +909,7 @@
 		};
 		9452DAF41E42476F00158C09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BFA30477808CC3FFCB3828C /* Pods-LaundryHousePartnerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +925,7 @@
 		};
 		9452DAF61E42476F00158C09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5531DAA0DBC70D509A64A868 /* Pods-LaundryHousePartnerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 9QYE6NRHXE;
@@ -529,6 +940,7 @@
 		};
 		9452DAF71E42476F00158C09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8EE36C7F8C6AF0E0D66F03C /* Pods-LaundryHousePartnerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 9QYE6NRHXE;
@@ -560,6 +972,7 @@
 				9452DAF11E42476F00158C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9452DAF21E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartnerTests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +981,7 @@
 				9452DAF41E42476F00158C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9452DAF51E42476F00158C09 /* Build configuration list for PBXNativeTarget "LaundryHousePartnerUITests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +990,7 @@
 				9452DAF71E42476F00158C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

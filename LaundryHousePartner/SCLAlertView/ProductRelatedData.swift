@@ -14,6 +14,7 @@ class ProductRelatedData: NSObject {
     
     var productName: String?
     var price: String?
+    var serviceType: String?
     
     
     

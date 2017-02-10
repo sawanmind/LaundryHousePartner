@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
+import SVProgressHUD
 
 class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if FIRAuth.auth()?.currentUser != nil {
+       
+            
+        } else {
+            
+            let nav = LoginViewController()
+            present(nav, animated: true, completion: nil)
+            
+        }
+        
         view.backgroundColor = UIColor(hexString: "2E3B46")
 
         setupNavigationItem()
-       view.addSubview(productBtnTitle)
+        view.addSubview(productBtnTitle)
         view.addSubview(productBtn)
         view.addSubview(priceBtnTitle)
         view.addSubview(priceBtn)
@@ -27,8 +41,9 @@ class MainViewController: UIViewController {
         view.addSubview(countryBtn)
         view.addSubview(zipcodenBtnTitle)
         view.addSubview(zipcodeBtn)
-        
-        
+//        view.addSubview(VendorBtn)
+//        view.addSubview(VendorBtnTitle)
+//        
         setupproductBtn()
         setupproductBtntitle()
         setuppriceBtntitle()
@@ -41,21 +56,31 @@ class MainViewController: UIViewController {
         setcountryBtn()
         setupzipcodeBtntitle()
         setzipcodeBtn()
+//        setupVendorBtn()
+//        setupVendorBtntitle()
     }
 
     private func setupNavigationItem(){
         let image = UIImage(named: "notification")
         navigationItem.title = "Dashboard Panel"
-        navigationItem.rightBarButtonItems = [UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(hanldeNotification)), UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(handleSmartSearch))]
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(hanldeNotification))]
         
         let profileImage = UIImage(named: "profile")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: profileImage, style: .plain, target: self, action: #selector(handleProfile))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: profileImage, style: .plain, target: self, action: #selector(handleSignout))
         
     }
     
-    func handleProfile(){
+    func handleSignout(){
         
-        print("profile")
+        do {
+            try FIRAuth.auth()?.signOut()
+            
+        } catch  let logoutError{
+            print(logoutError)
+        }
+        let Controller = LoginViewController()
+        self.present(Controller, animated: true, completion: nil)
+        
     }
     
     func hanldeNotification(){
@@ -79,7 +104,7 @@ class MainViewController: UIViewController {
     }()
     
     
-    //product
+    //product & Price
     
     lazy var productBtnTitle: UILabel = {
         let nav = UILabel()
@@ -127,15 +152,15 @@ class MainViewController: UIViewController {
     
     
     
-    //price
+    //Orders
     
     
     lazy var priceBtnTitle: UILabel = {
         let nav = UILabel()
         nav.translatesAutoresizingMaskIntoConstraints = false
-        nav.text = "Price"
+        nav.text = "Orders"
         nav.isUserInteractionEnabled = true
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(handlePrice))
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(handleOrderHistory))
           nav.addGestureRecognizer(gesture)
         return nav
     }()
@@ -153,7 +178,7 @@ class MainViewController: UIViewController {
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.image = UIImage(named: "price")
         btn.isUserInteractionEnabled = true
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(handlePrice))
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(handleOrderHistory))
 
            btn.addGestureRecognizer(gesture)
         return btn
@@ -166,9 +191,9 @@ class MainViewController: UIViewController {
         priceBtn.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
     
-    func handlePrice(){
+    func handleOrderHistory(){
         
-        let new = priceViewController()
+        let new = orderHistoryViewController()
         self.navigationController?.pushViewController(new, animated: true)
     }
     
@@ -359,5 +384,52 @@ class MainViewController: UIViewController {
         let new = ZipcodeViewController()
         self.navigationController?.pushViewController(new, animated: true)
     }
+    
+   
+    //Vendor List
+    
+    lazy var VendorBtnTitle: UILabel = {
+        let nav = UILabel()
+        nav.translatesAutoresizingMaskIntoConstraints = false
+        nav.text = "Vendor List"
+        nav.isUserInteractionEnabled = true
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(handleVendor))
+        nav.addGestureRecognizer(gesture)
+        
+        return nav
+    }()
+    
+    func setupVendorBtntitle(){
+        VendorBtnTitle.centerXAnchor.constraint(equalTo: VendorBtn.centerXAnchor).isActive = true
+        VendorBtnTitle.centerYAnchor.constraint(equalTo: VendorBtn.bottomAnchor, constant: 15).isActive = true
+        VendorBtnTitle.widthAnchor.constraint(equalTo: VendorBtnTitle.widthAnchor).isActive = true
+        VendorBtnTitle.heightAnchor.constraint(equalTo: VendorBtnTitle.heightAnchor).isActive = true
+        
+    }
+    
+    lazy var VendorBtn: UIImageView = {
+        let btn = UIImageView()
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.image = UIImage(named: "setting")
+        btn.isUserInteractionEnabled = true
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(handleVendor))
+        
+        btn.addGestureRecognizer(gesture)
+        return btn
+    }()
+    
+    func setupVendorBtn(){
+        VendorBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        VendorBtn.topAnchor.constraint(equalTo: countryBtnTitle.bottomAnchor, constant: 55).isActive = true
+        VendorBtn.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        VendorBtn.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    }
+    
+    func handleVendor(){
+        
+        let new = VendorListViewController()
+        self.navigationController?.pushViewController(new, animated: true)
+    }
+
 
 }
